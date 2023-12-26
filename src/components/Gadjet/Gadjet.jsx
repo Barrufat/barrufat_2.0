@@ -28,7 +28,7 @@ const Gadjet = () => {
         ref={videoElement}
         onTimeUpdate={handleOnTimeUpdate}
       />
-      <Canvas style={{ width: "100%", height: "90vh" }}>
+      <Canvas style={{ width: "100%", height: "180vw" }}>
         <OrbitControls enableZoom={false} autoRotate={true} />
         <directionalLight position={[-10, 20, -20]} intensity={2} />
         <ambientLight intensity={1} />

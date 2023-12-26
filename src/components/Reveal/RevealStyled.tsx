@@ -10,7 +10,7 @@ const RevealStyled = styled.div`
     bottom: 4px;
     left: 0;
     right: 0;
-    background: orange;
+    background: ${({ theme }) => theme.colors.primaryOrange};
     z-index: 2;
     border-radius: 50px 0 0 50px;
   }

@@ -1,12 +1,17 @@
 import Hero from "../Hero/Hero";
 import AppStyled from "./Appstyled";
+import Gadjet from "../Gadjet/Gadjet";
+import Header from "../Header/Header";
 
 const App = () => {
   return (
-    <AppStyled>
-      <img src="./barru-logo.svg" alt="barru-logo" width="200" />
-      <Hero />
-    </AppStyled>
+    <>
+      <Header />
+      <Gadjet />
+      <AppStyled>
+        <Hero />
+      </AppStyled>
+    </>
   );
 };
 
