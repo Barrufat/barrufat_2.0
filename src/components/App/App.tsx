@@ -1,3 +1,4 @@
+import Gadjet from "../Gadjet/Gadjet";
 import Reveal from "../Reveal/Reveal";
 import AppStyled from "./Appstyled";
 
@@ -5,6 +6,7 @@ const App = () => {
   return (
     <AppStyled>
       <img src="./barru-logo.svg" alt="barru-logo" width="200" />;
+      <Gadjet />
       <Reveal>
         <h1>Lorem ipsum dolor sit amet.</h1>
       </Reveal>
