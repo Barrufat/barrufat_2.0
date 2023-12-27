@@ -3,6 +3,7 @@ import AppStyled from "./Appstyled";
 import Gadjet from "../Gadjet/Gadjet";
 import Header from "../Header/Header";
 import AboutMe from "../AboutMe/AboutMe";
+import Skills from "../Skills/Skills";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <AppStyled>
         <Hero />
         <AboutMe />
+        <Skills />
       </AppStyled>
     </>
   );

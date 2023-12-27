@@ -9,28 +9,27 @@ const AboutMe = () => {
     <>
       <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
       <AboutMeStyled>
-        <div className="about__title-wrapper">
-          <div className="about__title-detail-wrapper">
+        <div className="section__title-wrapper">
+          <div className="section__title-detail-wrapper">
             <Reveal>
-              <span className="about__title about__title--detail">About</span>
+              <span className="section__title section__title--detail">
+                {t("aboutMeTitle1")}
+              </span>
             </Reveal>
             <Reveal>
-              <span className="about__title">me</span>
+              <span className="section__title">{t("aboutMeTitle2")}</span>
             </Reveal>
           </div>
-          <div className="about__detail-line" />
+          <div className="section__detail-line" />
         </div>
         <Reveal>
-          <p className="about__info-wrapper">{t("aboutMe1")}</p>
+          <p className="section__info-wrapper">{t("aboutMe1")}</p>
         </Reveal>
         <Reveal>
-          <p className="about__info-wrapper">{t("aboutMe2")}</p>
+          <p className="section__info-wrapper">{t("aboutMe2")}</p>
         </Reveal>
         <Reveal>
-          <p className="about__info-wrapper">{t("aboutMe3")}</p>
-        </Reveal>
-        <Reveal>
-          <p className="about__info-wrapper">{t("aboutMe4")}</p>
+          <p className="section__info-wrapper">{t("aboutMe3")}</p>
         </Reveal>
       </AboutMeStyled>
     </>

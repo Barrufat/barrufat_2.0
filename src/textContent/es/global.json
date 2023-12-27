@@ -1,10 +1,19 @@
 {
+  "greetingTitle1": "Hola",
+  "greetingTitle2": "Soy Alex",
   "greeting": "Me gusta ayudar a empresas a crear su espacio en la red y disfruto desarrollando aplicaciones e interactivos.",
 
+  "aboutMeTitle1": "Sobre",
+  "aboutMeTitle2": "Mí",
   "aboutMe1": "Soy un Diseñador y Desarrollador Web Full Stack de la provincia de Barcelona 🏖️",
-  "aboutMe2": "Prefiero las estructuras sencillas pero eficaces, limpias y con interacciones que no dejen indiferente al usuario.",
-  "aboutMe3": "Proviniente del mundo de la ingenieria de la edificación en el que desarrollé mis capacidades de diseño y creatividad, decidi cambiar el rumbo y adentrarme en el sector del desarrollo web buscando nuevas experiencias y desafios 🏗️",
-  "aboutMe4": "He trabajado en muchos proyectos como Freelance, refirmando así mi pasión por este mundo nuevo en el que cada proyecto es diferente y enriquecedor.",
+  "aboutMe2": "Proviniente del mundo de la ingenieria de la edificación en el que desarrollé mis capacidades de diseño y creatividad, decidi cambiar el rumbo y adentrarme en el sector del desarrollo web buscando nuevas experiencias y desafios 🏗️",
+  "aboutMe3": "He trabajado en muchos proyectos como Freelance, refirmando así mi pasión por este mundo nuevo en el que cada proyecto es diferente y enriquecedor.",
+
+  "skillsTitle1": "Mis",
+  "skillsTitle2": "Skills",
+  "skills1": "Prefiero las estructuras sencillas pero eficaces, limpias y con interacciones que no dejen indiferente al usuario.",
+  "skills2": "Me gusta seguir una metodología de feature testing en la que cada componente es testeado mediante test unitario, de integración y end to end para facilitar la detección y reparación de error y aportar mas confiabilidad a nuestro código.",
+  "skills3": "Creo en la importancia del código limpio y las buenas prácticas, esforzandome para que mi código sea facilmente escalable y reutilizable.",
 
   "projects1": "Hecha un vistazo a algunos de los proyectos que he realizado y si quieres...",
 

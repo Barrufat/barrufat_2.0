@@ -1,10 +1,19 @@
 {
+  "greetingTitle1": "Hi there",
+  "greetingTitle2": "I'm Alex",
   "greeting": "I like helping companies creating their own web space and I enjoy developing apps and interactives.",
 
+  "aboutMeTitle1": "About",
+  "aboutMeTitle2": "Me",
   "aboutMe1": "I am a Web Designer and Full Stack Developer based in Barcelona 🏖️",
-  "aboutMe2": "I prefer simple but effective structures, clean and with interactions that do not leave the user indifferent. ",
-  "aboutMe3": "Coming from the world of building engineering in which I developed my design and creativity skills, I decided to change course and enter the web development sector looking for new experiences and challenges 🏗️",
-  "aboutMe4": "I have worked on many projects as a Freelance, thus reaffirming my passion for this new world in which each project is different and enriching.",
+  "aboutMe2": "Coming from the world of building engineering in which I developed my design and creativity skills, I decided to change course and enter the web development sector looking for new experiences and challenges 🏗️",
+  "aboutMe3": "I have worked on many projects as a Freelance, thus reaffirming my passion for this new world in which each project is different and enriching.",
+
+  "skillsTitle1": "My",
+  "skillsTitle2": "Skills",
+  "skills1": "I prefer simple but effective structures, clean and with interactions that do not leave the user indifferent. ",
+  "skills2": "I like to follow a feature testing methodology in which each component is tested using unit, integration and end-to-end testing to facilitate error detection and repair and provide more reliability to our code.",
+  "skills3": "I believe in the importance of clean code and good practices, striving to make my code easily scalable and reusable.",
 
   "projects1": "Take a look at some of the projects I've done and if you want...",
 
