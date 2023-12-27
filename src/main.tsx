@@ -6,7 +6,8 @@ import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import "@fontsource/gajraj-one";
 import "@fontsource/permanent-marker";
-import "@fontsource/jaldi";
+import "@fontsource/roboto";
+import "@fontsource/roboto/100.css";
 import GlobalStyle from "./components/styles/GlobalStyle";
 import mainTheme from "./components/styles/mainTheme";
 

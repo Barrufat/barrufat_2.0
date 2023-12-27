@@ -16,6 +16,7 @@
     "@fontsource/gajraj-one": "^5.0.18",
     "@fontsource/jaldi": "^5.0.8",
     "@fontsource/permanent-marker": "^5.0.8",
+    "@fontsource/roboto": "^5.0.8",
     "@react-three/drei": "^9.92.6",
     "@react-three/fiber": "^8.15.12",
     "@reduxjs/toolkit": "^1.9.7",

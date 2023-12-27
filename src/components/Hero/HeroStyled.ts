@@ -5,10 +5,10 @@ const HeroStyled = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 30px;
 
   .hero {
     &__wrapper {
-      margin-top: -40vh;
     }
 
     &__main-title {

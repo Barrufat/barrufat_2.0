@@ -16,7 +16,7 @@ declare module "styled-components" {
       contentFontFamily: string;
       detailFontFamily: string;
       mainSize: string;
-      principalInfoSize: string;
+      secondSize: string;
       detailInfoSize: string;
       infoSize: string;
     };

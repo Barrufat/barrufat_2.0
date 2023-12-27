@@ -9,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html {
-  font-family: ${({ theme }) => theme.typography.contentFontFamily}
+  font-family: ${({ theme }) => theme.typography.contentFontFamily};
+  font-size: ${({ theme }) => theme.typography.infoSize};
 }
 
 body {
@@ -20,6 +21,8 @@ body {
 
 p{
   margin:0;
+  line-height: 30px;
+  font-weight: 100;
 }
 
 ul,
@@ -32,7 +35,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-    font-size: 20px;
+  font-size: 20px;
 }
 
 button {
