@@ -5,8 +5,7 @@ const AppStyled = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20vh;
-  padding: 0 25px;
+  gap: 5vh;
   margin-top: -35vh;
 `;
 

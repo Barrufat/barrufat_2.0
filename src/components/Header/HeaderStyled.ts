@@ -20,10 +20,11 @@ const HeaderStyled = styled.header`
     border-radius: 30px;
     border: solid 1.5px black;
     background-color: ${({ theme }) => theme.colors.primaryOrange};
-    transition: ease-in-out;
+    transition: all 0.4s ease-out;
 
     &__active {
       justify-content: flex-end;
+      transition: all 0.4s ease-out;
     }
 
     &__button {

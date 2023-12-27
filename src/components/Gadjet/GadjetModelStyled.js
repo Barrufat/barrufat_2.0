@@ -5,7 +5,7 @@ const GadjetModelStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: -25px;
+  margin-top: -70px;
   z-index: 0;
 `;
 

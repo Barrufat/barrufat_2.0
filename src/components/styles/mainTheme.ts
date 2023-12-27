@@ -14,8 +14,8 @@ const mainTheme: DefaultTheme = {
     detailFontFamily: "'Permanent Marker', sans-serif;",
     contentFontFamily: "'Roboto', sans-serif;",
     mainSize: "60px",
-    principalInfoSize: "24px",
-    detailInfoSize: "32px",
+    secondSize: "45px",
+    detailInfoSize: "28px",
     infoSize: "24px",
   },
 };
