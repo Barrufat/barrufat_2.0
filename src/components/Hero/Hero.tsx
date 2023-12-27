@@ -3,7 +3,7 @@ import Reveal from "../Reveal/Reveal";
 import HeroStyled from "./HeroStyled";
 
 const Hero = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
 
   return (
     <HeroStyled>
@@ -22,7 +22,7 @@ const Hero = () => {
           </span>
         </Reveal>
         <Reveal>
-          <p className="hero__greeting-text">{t("presentacion1")}</p>
+          <p>{t("greeting")}</p>
         </Reveal>
       </div>
     </HeroStyled>

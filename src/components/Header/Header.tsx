@@ -4,6 +4,7 @@ import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 import HeaderStyled from "./HeaderStyled";
 
 const Header = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [t, i18n] = useTranslation("global");
   const [currentLenguage, setCurrentLenguage] = useState(false);
 
@@ -16,8 +17,14 @@ const Header = () => {
   return (
     <>
       <HeaderStyled>
+        <img
+          className="header__logo"
+          src="./barru-logo.svg"
+          alt="barru-logo"
+          width="120"
+        />
         <a
-          className="icono"
+          className="header__icon"
           href="https://www.freelancer.es/u/barrufat?from=search"
           target="_blank"
           rel="noreferrer"
@@ -25,7 +32,7 @@ const Header = () => {
           <SiFreelancer />
         </a>
         <a
-          className="icono"
+          className="header__icon"
           href="https://github.com/Barrufat"
           target="_blank"
           rel="noreferrer"
@@ -33,7 +40,7 @@ const Header = () => {
           <SiGithub />
         </a>
         <a
-          className="icono"
+          className="header__icon"
           href="https://www.linkedin.com/in/alex-barbero-arrufat/"
           target="_blank"
           rel="noreferrer"

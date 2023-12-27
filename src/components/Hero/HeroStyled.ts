@@ -8,7 +8,6 @@ const HeroStyled = styled.section`
 
   .hero {
     &__wrapper {
-      margin-top: -40vh;
     }
 
     &__main-title {

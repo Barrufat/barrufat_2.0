@@ -12,7 +12,7 @@ const Gadjet = () => {
   const { playerState, togglePlay, handleOnTimeUpdate } =
     useVideoPlayer(videoElement);
 
-  const [audioSrc, setAudioSrc] = useState("./GadjetSound1.mp3");
+  const [audioSrc] = useState("./GadjetSound1.mp3");
 
   useEffect(() => {
     if (playerState.progress === 100) {
