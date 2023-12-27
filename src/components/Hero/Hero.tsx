@@ -10,11 +10,11 @@ const Hero = () => {
       <div className="hero__wrapper">
         <Reveal>
           <span className="hero__secondary-title">
-            Hi there <span className="hero__detail">!</span>
+            {t("greetingTitle1")} <span className="hero__detail">!</span>
           </span>
         </Reveal>
         <Reveal>
-          <h1 className="hero__main-title">I'm Alex</h1>
+          <h1 className="hero__main-title">{t("greetingTitle2")}</h1>
         </Reveal>
         <Reveal>
           <span className="hero__secondary-title">
