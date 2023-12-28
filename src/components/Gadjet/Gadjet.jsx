@@ -7,7 +7,7 @@ import GadjetModelStyled from "./GadjetModelStyled";
 
 const Gadjet = () => {
   return (
-    <GadjetModelStyled>
+    <GadjetModelStyled id="hero">
       <img src="./hexagon1.svg" alt="bg-hexagon" width="100%" height="auto" />
       <Canvas style={{ width: "100%", height: "180vw", marginTop: "-20vh" }}>
         <OrbitControls enableZoom={false} autoRotate={true} />

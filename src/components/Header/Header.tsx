@@ -2,11 +2,13 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 import HeaderStyled from "./HeaderStyled";
+import Navigation from "../Navigation/Navigation";
 
 const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [t, i18n] = useTranslation("global");
   const [currentLenguage, setCurrentLenguage] = useState(false);
+  const [isNavigationActive, setIsNavigationActive] = useState(false);
 
   const switchLenguage = () => {
     setCurrentLenguage(!currentLenguage);
@@ -14,15 +16,21 @@ const Header = () => {
     currentLenguage ? i18n.changeLanguage("en") : i18n.changeLanguage("es");
   };
 
+  const switchNavigation = () => {
+    setIsNavigationActive(!isNavigationActive);
+  };
+
   return (
     <>
       <HeaderStyled>
-        <img
-          className="header__logo"
-          src="./barru-logo.svg"
-          alt="barru-logo"
-          width="120"
-        />
+        <button onClick={switchNavigation}>
+          <img
+            className="header__logo"
+            src="./barru-logo.svg"
+            alt="barru-logo"
+            width="120"
+          />
+        </button>
         <a
           className="header__icon"
           href="https://www.freelancer.es/u/barrufat?from=search"
@@ -57,6 +65,7 @@ const Header = () => {
           </button>
         </div>
       </HeaderStyled>
+      {isNavigationActive && <Navigation />}
     </>
   );
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SkillsStyled = styled.section`
-  padding: 0 30px;
+  padding: 120px 30px 0 30px;
   display: flex;
   flex-direction: column;
   text-align: end;
