@@ -8,7 +8,7 @@ const AboutMe = () => {
   return (
     <>
       <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
-      <AboutMeStyled>
+      <AboutMeStyled id="about">
         <div className="section__title-wrapper">
           <div className="section__title-detail-wrapper">
             <Reveal>

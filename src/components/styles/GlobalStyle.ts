@@ -15,6 +15,7 @@ html {
 
 body {
   margin: 0;
+  scroll-behavior: smooth;
   color:${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.darkBackground}
 }

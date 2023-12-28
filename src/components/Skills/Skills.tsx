@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <>
       <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
-      <SkillsStyled>
+      <SkillsStyled id="skills">
         <div className="section__title-wrapper">
           <div className="section__detail-line" />
           <div className="section__title-detail-wrapper">
