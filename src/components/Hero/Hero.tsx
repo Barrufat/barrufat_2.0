@@ -8,20 +8,20 @@ const Hero = () => {
   return (
     <HeroStyled>
       <div className="hero__wrapper">
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <span className="hero__secondary-title">
             {t("greetingTitle1")} <span className="hero__detail">!</span>
           </span>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <h1 className="hero__main-title">{t("greetingTitle2")}</h1>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <span className="hero__secondary-title">
             <span className="hero__detail">FullStack</span> developer
           </span>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <p>{t("greeting")}</p>
         </Reveal>
       </div>
