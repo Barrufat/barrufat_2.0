@@ -7,14 +7,13 @@ const HeaderStyled = styled.header`
   justify-content: space-around;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   backdrop-filter: blur(12px);
   align-items: center;
   background: #2f372840;
 
   .lenguage-switch {
     width: 50px;
-    margin-top: -5px;
     display: flex;
     justify-content: flex-start;
     border-radius: 30px;
@@ -49,10 +48,6 @@ const HeaderStyled = styled.header`
       :hover {
         color: rgb(228, 136, 31);
       }
-    }
-
-    &__logo {
-      margin-top: -5px;
     }
   }
 `;
