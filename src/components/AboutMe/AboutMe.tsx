@@ -11,24 +11,24 @@ const AboutMe = () => {
       <AboutMeStyled id="about">
         <div className="section__title-wrapper">
           <div className="section__title-detail-wrapper">
-            <Reveal>
+            <Reveal movement={"bottom"} hasColorWrapper={true}>
               <span className="section__title section__title--detail">
                 {t("aboutMeTitle1")}
               </span>
             </Reveal>
-            <Reveal>
+            <Reveal movement={"bottom"} hasColorWrapper={true}>
               <span className="section__title">{t("aboutMeTitle2")}</span>
             </Reveal>
           </div>
           <div className="section__detail-line" />
         </div>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <p className="section__info-wrapper">{t("aboutMe1")}</p>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <p className="section__info-wrapper">{t("aboutMe2")}</p>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <p className="section__info-wrapper">{t("aboutMe3")}</p>
         </Reveal>
       </AboutMeStyled>

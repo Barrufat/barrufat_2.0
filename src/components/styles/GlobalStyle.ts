@@ -102,7 +102,7 @@ textarea {
 
     &__detail-line {
       height: 1px;
-      width: 100%;
+      width: 50%;
       background-color: ${({ theme }) => theme.colors.white};
     }
   }

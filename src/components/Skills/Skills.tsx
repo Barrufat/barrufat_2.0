@@ -17,17 +17,17 @@ const Skills = () => {
         <div className="section__title-wrapper">
           <div className="section__detail-line" />
           <div className="section__title-detail-wrapper">
-            <Reveal>
+            <Reveal movement={"bottom"} hasColorWrapper={true}>
               <span className="section__title section__title--detail">
                 {t("skillsTitle1")}
               </span>
             </Reveal>
-            <Reveal>
+            <Reveal movement={"bottom"} hasColorWrapper={true}>
               <span className="section__title">{t("skillsTitle2")}</span>
             </Reveal>
           </div>
         </div>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <>
             <p className="section__info-wrapper">{t("skills1")}</p>
             <div className="frameworks__container">
@@ -39,7 +39,7 @@ const Skills = () => {
             </div>
           </>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <>
             <p className="section__info-wrapper">{t("skills2")}</p>
             <div className="frameworks__container">
@@ -51,7 +51,7 @@ const Skills = () => {
             </div>
           </>
         </Reveal>
-        <Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={true}>
           <>
             <p className="section__info-wrapper">{t("skills3")}</p>
             <div className="frameworks__container">
