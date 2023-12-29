@@ -15,7 +15,8 @@
   "skills2": "Me gusta seguir una metodología de feature testing en la que cada componente es testeado mediante test unitario, de integración y end to end para facilitar la detección y reparación de error y aportar mas confiabilidad a nuestro código.",
   "skills3": "Creo en la importancia del código limpio y las buenas prácticas, esforzandome para que mi código sea facilmente escalable y reutilizable.",
 
-  "projects1": "Hecha un vistazo a algunos de los proyectos que he realizado y si quieres...",
+  "projectsTitle1": "Mis",
+  "projectsTitle2": "Proyectos",
 
   "contactMe1": "Contacta conmigo",
   "contactMe2": "Cuentáme tu idea para empezar a crear algo especial!",
