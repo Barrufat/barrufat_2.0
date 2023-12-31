@@ -16,7 +16,7 @@ const mainTheme: DefaultTheme = {
     mainSize: "60px",
     secondSize: "45px",
     detailInfoSize: "28px",
-    infoSize: "24px",
+    infoSize: "22px",
   },
 };
 

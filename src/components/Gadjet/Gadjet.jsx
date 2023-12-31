@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/media-has-caption */
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";

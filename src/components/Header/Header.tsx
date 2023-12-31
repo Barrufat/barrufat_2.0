@@ -4,21 +4,27 @@ import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 import HeaderStyled from "./HeaderStyled";
 import Navigation from "../Navigation/Navigation";
 import Reveal from "../Reveal/Reveal";
+import useOutsideClick from "../../hooks/useOutsideClick";
 
 const Header = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [t, i18n] = useTranslation("global");
-  const [currentLenguage, setCurrentLenguage] = useState(false);
+  const [__t, i18n] = useTranslation("global");
+  const [currentLanguage, setCurrentLanguage] = useState(false);
   const [isNavigationActive, setIsNavigationActive] = useState(false);
 
-  const switchLenguage = () => {
-    setCurrentLenguage(!currentLenguage);
-
-    currentLenguage ? i18n.changeLanguage("en") : i18n.changeLanguage("es");
+  const switchNavigation = (isActive: boolean) => {
+    setIsNavigationActive(isActive);
   };
 
-  const switchNavigation = () => {
-    setIsNavigationActive(!isNavigationActive);
+  const handleClickOutside = () => {
+    switchNavigation(false);
+  };
+
+  const ref = useOutsideClick(handleClickOutside);
+
+  const switchLanguage = () => {
+    setCurrentLanguage(!currentLanguage);
+
+    currentLanguage ? i18n.changeLanguage("en") : i18n.changeLanguage("es");
   };
 
   return (
@@ -29,7 +35,7 @@ const Header = () => {
           hasColorWrapper={false}
           transitionDelay={0.2}
         >
-          <button onClick={switchNavigation}>
+          <button ref={ref} onClick={() => switchNavigation(true)}>
             <img
               className="header__logo"
               src="./barru-logo.svg"
@@ -82,15 +88,15 @@ const Header = () => {
         </Reveal>
         <Reveal movement={"above"} hasColorWrapper={false} transitionDelay={1}>
           <div
-            className={`lenguage-switch ${
-              currentLenguage ? "lenguage-switch__active" : ""
+            className={`language-switch ${
+              currentLanguage ? "language-switch__active" : ""
             }`}
           >
             <button
-              className="lenguage-switch__button"
-              onClick={switchLenguage}
+              className="language-switch__button"
+              onClick={switchLanguage}
             >
-              {currentLenguage ? "ES" : "EN"}
+              {currentLanguage ? "ES" : "EN"}
             </button>
           </div>
         </Reveal>

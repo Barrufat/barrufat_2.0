@@ -1,11 +1,11 @@
-import { projectsList } from "../../textContent/projects";
+import { projectsList, projectsListSpanish } from "../../textContent/projects";
 import Project from "../Project/Project";
 import Reveal from "../Reveal/Reveal";
 import { useTranslation } from "react-i18next";
 import ProjectsListStyled from "./ProjectListStyled";
 
 const ProjectsList = () => {
-  const [t] = useTranslation("global");
+  const [t, i18n] = useTranslation("global");
 
   return (
     <>
@@ -24,11 +24,23 @@ const ProjectsList = () => {
           </div>
           <div className="section__detail-line" />
         </div>
-        <ul>
-          {projectsList.map((project) => (
-            <Project project={project} />
-          ))}
-        </ul>
+        {i18n.language === "en" ? (
+          <ul>
+            {projectsList.map((project) => (
+              <li key={project.title}>
+                <Project project={project} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <ul>
+            {projectsListSpanish.map((project) => (
+              <li key={project.title}>
+                <Project project={project} />
+              </li>
+            ))}
+          </ul>
+        )}
       </ProjectsListStyled>
     </>
   );

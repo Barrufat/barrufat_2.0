@@ -44,6 +44,7 @@ button {
   background: none;
   border: none;
   cursor:pointer;
+  font-size:inherit;
 }
 
 input {
@@ -89,6 +90,7 @@ textarea {
         width: 100%;
         align-items: center;
         gap: 10px;
+        margin-bottom: 20px;
       }
     }
 
