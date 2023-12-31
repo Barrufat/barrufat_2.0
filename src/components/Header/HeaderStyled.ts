@@ -12,7 +12,7 @@ const HeaderStyled = styled.header`
   align-items: center;
   background: #2f372840;
 
-  .lenguage-switch {
+  .language-switch {
     width: 50px;
     display: flex;
     justify-content: flex-start;

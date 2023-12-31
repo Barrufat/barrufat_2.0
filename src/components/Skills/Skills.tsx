@@ -32,8 +32,10 @@ const Skills = () => {
             <p className="section__info-wrapper">{t("skills1")}</p>
             <div className="frameworks__container">
               {fullStackTecnologies.map(
-                (tecnology: string): React.ReactElement => (
-                  <span className="frameworks__wrapper">{tecnology}</span>
+                (tecnology: string, id): React.ReactElement => (
+                  <span key={id} className="frameworks__wrapper">
+                    {tecnology}
+                  </span>
                 )
               )}
             </div>
@@ -44,8 +46,10 @@ const Skills = () => {
             <p className="section__info-wrapper">{t("skills2")}</p>
             <div className="frameworks__container">
               {testingTecnologies.map(
-                (tecnology: string): React.ReactElement => (
-                  <span className="frameworks__wrapper">{tecnology}</span>
+                (tecnology: string, id): React.ReactElement => (
+                  <span key={id} className="frameworks__wrapper">
+                    {tecnology}
+                  </span>
                 )
               )}
             </div>
@@ -56,8 +60,10 @@ const Skills = () => {
             <p className="section__info-wrapper">{t("skills3")}</p>
             <div className="frameworks__container">
               {agileMetodologies.map(
-                (tecnology: string): React.ReactElement => (
-                  <span className="frameworks__wrapper">{tecnology}</span>
+                (tecnology: string, id): React.ReactElement => (
+                  <span key={id} className="frameworks__wrapper">
+                    {tecnology}
+                  </span>
                 )
               )}
             </div>
