@@ -1,11 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef, useEffect } from "react";
 
-const useOutsideClick = (callback) => {
+const useOutsideClick = (callback: () => void) => {
   const ref = useRef();
 
   useEffect(() => {
-    const handleClick = (event) => {
-      if (ref.current && !ref.current.contains(event.target)) {
+    const handleClick = () => {
+      if (ref.current) {
         callback();
       }
     };

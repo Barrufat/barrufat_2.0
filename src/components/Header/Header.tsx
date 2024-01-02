@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { LegacyRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 import HeaderStyled from "./HeaderStyled";
@@ -35,7 +35,10 @@ const Header = () => {
           hasColorWrapper={false}
           transitionDelay={0.2}
         >
-          <button ref={ref} onClick={() => switchNavigation(true)}>
+          <button
+            ref={ref as unknown as LegacyRef<HTMLButtonElement>}
+            onClick={() => switchNavigation(true)}
+          >
             <img
               className="header__logo"
               src="./barru-logo.svg"
