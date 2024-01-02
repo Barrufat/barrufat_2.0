@@ -5,6 +5,8 @@ import Header from "../Header/Header";
 import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills/Skills";
 import ProjectsList from "../ProjectsList/ProjectsList";
+import ContactForm from "../ContactForm/ContactForm";
+import PdfViewer from "../PdfViewer/PdfViewer";
 
 const App = () => {
   return (
@@ -12,10 +14,12 @@ const App = () => {
       <Header />
       <Gadjet />
       <AppStyled>
+        <PdfViewer />
         <Hero />
         <AboutMe />
         <Skills />
         <ProjectsList />
+        <ContactForm />
       </AppStyled>
     </>
   );

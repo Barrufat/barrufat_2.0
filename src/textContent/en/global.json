@@ -18,12 +18,13 @@
   "projectsTitle1": "My",
   "projectsTitle2": "Projects",
 
-  "contactMe1": "Contact me",
-  "contactMe2": "Shoot me an email if you want to connect! You can also find me on",
-  "contactMe2.1": "or",
-  "contactMe2.2": "if you prefer.",
+  "contactMeTitle1": "Contact",
+  "contactMeTitle2": "Me",
+  "contactMe2": "Shoot me an email if you want to connect! You can also find me on ",
+  "contactMe2.1": " or ",
+  "contactMe2.2": " if you prefer.",
   "contactMe3": "Name",
   "contactMe4": "E-mail",
-  "contactMe5": "SEND",
+  "contactMe5": "Send",
   "contactMe6": "Write your message"
 }

@@ -18,10 +18,13 @@
   "projectsTitle1": "Mis",
   "projectsTitle2": "Proyectos",
 
-  "contactMe1": "Contacta conmigo",
-  "contactMe2": "Cuentáme tu idea para empezar a crear algo especial!",
+  "contactMeTitle1": "Contacta",
+  "contactMeTitle2": "me",
+  "contactMe2": "¡Envíame un correo electrónico si quieres conectarte! También puedes encontrarme en ",
+  "contactMe2.1": " o en ",
+  "contactMe2.2": "si lo prefieres.",
   "contactMe3": "Nombre",
   "contactMe4": "Email",
-  "contactMe5": "ENVIAR",
+  "contactMe5": "Enviar",
   "contactMe6": "Escribe aqui tu mensaje"
 }

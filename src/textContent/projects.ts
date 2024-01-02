@@ -26,14 +26,15 @@ export const projectsList: ProjectStructure[] = [
     description:
       "In collaboration with the PixelOn team, we developed an exclusive website for the Daiki ISH23 event. This virtual space provides detailed information about the event, including schedules, featured speakers, and activities. Stay connected with the latest updates and participate in unique interactive experiences that capture the essence of the Daiki ISH23 event. 🌐🚀",
     image: "./montajeDAIKIN.png",
-    tecnologies: ["wordpress", "javascript", "html", "css"],
+    tecnologies: ["Javascript", "Html", "Css", "Wordpress"],
     title: "Daiki ISH23",
   },
   {
     demo: "https://elgratx.com",
-    description: "E-commerce",
+    description:
+      "E-commerce for a workshop specialized in screen printing and image creation. The user can view the products, add them to the cart and finally make the purchase. On the page you will also find all the information about the events and courses that are held and make reservations to use the space.",
     image: "./montajeGratx.png",
-    tecnologies: ["wordpress", "javascript", "html", "css"],
+    tecnologies: ["Javascript", "Html", "Css", "Wordpress"],
     title: "El Gratx l'H",
   },
 ];
@@ -64,14 +65,15 @@ export const projectsListSpanish: ProjectStructure[] = [
     description:
       "En colaboración con el equipo de PixelOn, desarrollamos un sitio web exclusivo para el evento Daiki ISH23. Este espacio virtual proporciona información detallada sobre el evento, incluidos horarios, oradores destacados y actividades. Manténgase conectado con las últimas actualizaciones y participe en experiencias interactivas únicas que capturan la esencia del evento Daiki ISH23. 🌐🚀",
     image: "./montajeDAIKIN.png",
-    tecnologies: ["wordpress", "javascript", "html", "css"],
+    tecnologies: ["Javascript", "Html", "Css", "Wordpress"],
     title: "Daiki ISH23",
   },
   {
     demo: "https://elgratx.com",
-    description: "E-commerce",
+    description:
+      "E-commerce de el Gratx, taller especializado en serigrafía y la creación de imagen. El usuario puede visualizar los productos, añadirlos al carrito y finalmente realizar la compra. En la pagina también encontrarás toda la información de los eventos y cursos que se realizan y realizar reservas para usar el espacio. ",
     image: "./montajeGratx.png",
-    tecnologies: ["wordpress", "javascript", "html", "css"],
+    tecnologies: ["Javascript", "Html", "Css", "Wordpress"],
     title: "El Gratx l'H",
   },
 ];
