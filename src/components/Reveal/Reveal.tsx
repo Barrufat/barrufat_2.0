@@ -12,7 +12,7 @@ interface RevealProps {
 
 const Reveal = ({
   children,
-  width = "fit-content",
+  width,
   transitionDelay,
   hasColorWrapper,
   movement,
@@ -22,7 +22,8 @@ const Reveal = ({
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
-  const currentDelay = transitionDelay ?? 0.3;
+  const currentWidth = width ?? "fit-content";
+  const currentDelay = transitionDelay ?? 0.4;
 
   useEffect(() => {
     if (isInView) {
@@ -32,7 +33,7 @@ const Reveal = ({
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <RevealStyled ref={ref} style={{ width }}>
+    <RevealStyled ref={ref} style={{ width: currentWidth }}>
       {movement === "bottom" && (
         <motion.div
           variants={{

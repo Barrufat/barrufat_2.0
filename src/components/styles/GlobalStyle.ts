@@ -49,7 +49,6 @@ button {
 
 input {
   font-family: inherit;
-  text-align: center;
   padding: 10px;
   border:none;
   border-radius: 5px;
@@ -92,6 +91,17 @@ textarea {
         gap: 10px;
         margin-bottom: 20px;
       }
+    }
+
+    &__action{
+      margin-top: 10px;
+      padding: 10px 15px;
+      border-radius: 40px;
+      color: ${({ theme }) => theme.colors.primaryOlive};
+      border: 2px solid ${({ theme }) => theme.colors.primaryOlive};
+      background-color: ${({ theme }) => theme.colors.darkBackground};
+      font-family: ${({ theme }) => theme.typography.contentFontFamily};
+      font-size: ${({ theme }) => theme.typography.detailInfoSize};
     }
 
     &__info-wrapper {

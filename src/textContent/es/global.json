@@ -8,6 +8,8 @@
   "aboutMe1": "Soy un Diseñador y Desarrollador Web Full Stack de la provincia de Barcelona 🏖️",
   "aboutMe2": "Proviniente del mundo de la ingenieria de la edificación en el que desarrollé mis capacidades de diseño y creatividad, decidi cambiar el rumbo y adentrarme en el sector del desarrollo web buscando nuevas experiencias y desafios 🏗️",
   "aboutMe3": "He trabajado en muchos proyectos como Freelance, refirmando así mi pasión por este mundo nuevo en el que cada proyecto es diferente y enriquecedor.",
+  "aboutMe4": "Ver Currículum",
+  "aboutMe5": "Cerrar",
 
   "skillsTitle1": "Mis",
   "skillsTitle2": "Skills",
@@ -18,10 +20,13 @@
   "projectsTitle1": "Mis",
   "projectsTitle2": "Proyectos",
 
-  "contactMe1": "Contacta conmigo",
-  "contactMe2": "Cuentáme tu idea para empezar a crear algo especial!",
+  "contactMeTitle1": "Contacta",
+  "contactMeTitle2": "me",
+  "contactMe2": "¡Envíame un correo electrónico si quieres conectarte! También puedes encontrarme en ",
+  "contactMe2.1": " o en ",
+  "contactMe2.2": "si lo prefieres.",
   "contactMe3": "Nombre",
   "contactMe4": "Email",
-  "contactMe5": "ENVIAR",
+  "contactMe5": "Enviar",
   "contactMe6": "Escribe aqui tu mensaje"
 }
