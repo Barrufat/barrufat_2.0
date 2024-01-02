@@ -37,11 +37,12 @@ const ContactFormStyled = styled.section`
       font-size: ${({ theme }) => theme.typography.infoSize};
     }
 
-    &__button {
+    &__action {
       margin-top: 10px;
       width: 100%;
       padding: 5px;
       border-radius: 40px;
+      color: ${({ theme }) => theme.colors.white};
       background-color: ${({ theme }) => theme.colors.primaryOrange};
       font-family: ${({ theme }) => theme.typography.mainFontFamily};
       font-size: ${({ theme }) => theme.typography.secondSize};

@@ -1,6 +1,5 @@
 import { LegacyRef, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { SiGithub, SiLinkedin, SiFreelancer } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import ContactFormStyled from "./ContactFormStyled";
 import Reveal from "../Reveal/Reveal";
@@ -102,7 +101,7 @@ export const ContactForm = () => {
             <textarea className="contact-form__textarea" name="message" />
           </Reveal>
           <Reveal movement={"bottom"} hasColorWrapper={false} width="100%">
-            <button className="contact-form__button" type="submit">
+            <button className="contact-form__action" type="submit">
               {t("contactMe5")}
             </button>
           </Reveal>

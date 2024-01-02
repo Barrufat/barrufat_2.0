@@ -93,6 +93,17 @@ textarea {
       }
     }
 
+    &__action{
+      margin-top: 10px;
+      padding: 10px 15px;
+      border-radius: 40px;
+      color: ${({ theme }) => theme.colors.primaryOlive};
+      border: 2px solid ${({ theme }) => theme.colors.primaryOlive};
+      background-color: ${({ theme }) => theme.colors.darkBackground};
+      font-family: ${({ theme }) => theme.typography.contentFontFamily};
+      font-size: ${({ theme }) => theme.typography.detailInfoSize};
+    }
+
     &__info-wrapper {
       margin-bottom: 20px;
     }

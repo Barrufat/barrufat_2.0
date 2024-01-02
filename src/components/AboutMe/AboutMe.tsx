@@ -1,9 +1,16 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "../Reveal/Reveal";
 import AboutMeStyled from "./AboutMeStyled";
+import { useDispatch } from "react-redux";
+import { switchCVPdfActionCreator } from "../../store/feature/ui/uiSlice";
 
 const AboutMe = () => {
+  const dispatch = useDispatch();
   const [t] = useTranslation("global");
+
+  const openResumePdf = () => {
+    dispatch(switchCVPdfActionCreator());
+  };
 
   return (
     <>
@@ -30,6 +37,11 @@ const AboutMe = () => {
         </Reveal>
         <Reveal movement={"bottom"} hasColorWrapper={true}>
           <p className="section__info-wrapper">{t("aboutMe3")}</p>
+        </Reveal>
+        <Reveal movement={"bottom"} hasColorWrapper={false}>
+          <button className="section__action" onClick={openResumePdf}>
+            {t("aboutMe4")}
+          </button>
         </Reveal>
       </AboutMeStyled>
     </>
