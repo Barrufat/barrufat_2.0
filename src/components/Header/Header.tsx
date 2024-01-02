@@ -7,6 +7,7 @@ import Reveal from "../Reveal/Reveal";
 import useOutsideClick from "../../hooks/useOutsideClick";
 
 const Header = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [__t, i18n] = useTranslation("global");
   const [currentLanguage, setCurrentLanguage] = useState(false);
   const [isNavigationActive, setIsNavigationActive] = useState(false);
