@@ -6,17 +6,26 @@ import GadjetModelStyled from "./GadjetModelStyled";
 
 const Gadjet = () => {
   return (
-    <GadjetModelStyled id="hero">
-      <img src="./hexagon1.svg" alt="bg-hexagon" width="100%" height="auto" />
-      <Canvas style={{ width: "100%", height: "180vw", marginTop: "-20vh" }}>
-        <OrbitControls enableZoom={false} autoRotate={true} />
-        <directionalLight position={[-10, 20, -20]} intensity={2} />
-        <ambientLight intensity={1} />
-        <Suspense fallback={null}>
-          <GadjetModel />
-        </Suspense>
-      </Canvas>
-    </GadjetModelStyled>
+    <>
+      <img
+        id="hero"
+        className="section__hero-image"
+        src="./hexagon1.svg"
+        alt="bg-hexagon"
+        width="100"
+        height="50"
+      />
+      <GadjetModelStyled>
+        <Canvas className="gadjet__wrapper">
+          <OrbitControls enableZoom={false} autoRotate={true} />
+          <directionalLight position={[-10, 20, -20]} intensity={2} />
+          <ambientLight intensity={1} />
+          <Suspense fallback={null}>
+            <GadjetModel />
+          </Suspense>
+        </Canvas>
+      </GadjetModelStyled>
+    </>
   );
 };
 

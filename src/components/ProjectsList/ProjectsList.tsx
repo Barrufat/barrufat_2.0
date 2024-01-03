@@ -25,7 +25,7 @@ const ProjectsList = () => {
           <div className="section__detail-line" />
         </div>
         {i18n.language === "en" ? (
-          <ul>
+          <ul className="projects-list__wrapper">
             {projectsList.map((project) => (
               <li key={project.title}>
                 <Project project={project} />

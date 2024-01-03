@@ -53,6 +53,18 @@ const ContactFormStyled = styled.section`
       font-size: ${({ theme }) => theme.typography.infoSize};
     }
   }
+
+  @media (min-width: 500px) {
+    padding: 120px 30vw 50px 30vw;
+
+    .contact-form {
+      &__action {
+        width: 40%;
+        font-family: ${({ theme }) => theme.typography.mainFontFamily};
+        font-size: ${({ theme }) => theme.typography.detailInfoSize};
+      }
+    }
+  }
 `;
 
 export default ContactFormStyled;
