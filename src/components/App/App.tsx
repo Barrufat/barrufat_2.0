@@ -17,9 +17,9 @@ const App = () => {
       <Header />
       <Gadjet />
       <AppStyled>
-        {isResumeActive && <PdfViewer />}
         <Hero />
         <AboutMe />
+        {isResumeActive && <PdfViewer />}
         <Skills />
         <ProjectsList />
         <ContactForm />

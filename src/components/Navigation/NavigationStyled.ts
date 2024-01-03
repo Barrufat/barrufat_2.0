@@ -9,16 +9,16 @@ const NavigationStyled = styled.nav`
   background: #70f0003b;
   border-radius: 0 0 30px 0;
   backdrop-filter: blur(12px);
-  padding-bottom: 30px;
-  width: 50px;
+  padding: 30px 0;
+  height: 80vh;
 
   .nav {
     &__link {
-      margin-top: 30px;
       padding: 10px;
       width: 100%;
       writing-mode: vertical-lr;
       transition: all 0.1s;
+      cursor: pointer;
     }
   }
 

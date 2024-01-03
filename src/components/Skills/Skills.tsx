@@ -14,8 +14,8 @@ const Skills = () => {
     <>
       <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
       <SkillsStyled id="skills">
-        <div className="section__title-wrapper">
-          <div className="section__detail-line" />
+        <div className="section__title-wrapper section__title-wrapper-right">
+          <div className="section__detail-line section__detail-line-right" />
           <div className="section__title-detail-wrapper">
             <Reveal movement={"bottom"} hasColorWrapper={true}>
               <span className="section__title section__title--detail">

@@ -90,6 +90,10 @@ textarea {
         align-items: center;
         gap: 10px;
         margin-bottom: 20px;
+
+        &-right {
+          justify-content: flex-end;
+        }
       }
     }
 
@@ -116,6 +120,15 @@ textarea {
       height: 1px;
       width: 50%;
       background-color: ${({ theme }) => theme.colors.white};
+
+      &-right{
+        width: 100%;
+      }
+    }
+
+    &__hero-image {
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -136,6 +149,15 @@ textarea {
       padding: 0 10px;
     }
   }
+
+    @media (min-width: 500px) {
+      .section {
+        &__hero-image {
+          width: 100%;
+          height: 30vw;
+        }
+      }
+    }
 `;
 
 export default GlobalStyle;

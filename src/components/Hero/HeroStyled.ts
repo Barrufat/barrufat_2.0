@@ -30,6 +30,19 @@ const HeroStyled = styled.section`
       color: ${({ theme }) => theme.colors.primaryOlive};
     }
   }
+
+  @media (min-width: 500px) {
+    margin-top: -105vh;
+    padding: 0px 15vw 0 15vw;
+
+    .hero {
+      &__wrapper {
+        width: 80vw;
+        padding-right: 35vw;
+        margin-bottom: 40vh;
+      }
+    }
+  }
 `;
 
 export default HeroStyled;
