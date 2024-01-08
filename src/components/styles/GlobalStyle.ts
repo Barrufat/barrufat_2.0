@@ -16,8 +16,8 @@ html {
 body {
   margin: 0;
   scroll-behavior: smooth;
-  color:${({ theme }) => theme.colors.white};
-  background-color: ${({ theme }) => theme.colors.darkBackground}
+  color:${({ theme }) => theme.colors.contentColor};
+  background-color: ${({ theme }) => theme.colors.background}
 }
 
 p{
@@ -76,7 +76,7 @@ textarea {
 
   .section {
     &__title {
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.contentColor};
       font-family: ${({ theme }) => theme.typography.mainFontFamily};
       font-size: ${({ theme }) => theme.typography.secondSize};
 
@@ -103,7 +103,7 @@ textarea {
       border-radius: 40px;
       color: ${({ theme }) => theme.colors.primaryOlive};
       border: 2px solid ${({ theme }) => theme.colors.primaryOlive};
-      background-color: ${({ theme }) => theme.colors.darkBackground};
+      background-color: ${({ theme }) => theme.colors.background};
       font-family: ${({ theme }) => theme.typography.contentFontFamily};
       font-size: ${({ theme }) => theme.typography.detailInfoSize};
     }
@@ -119,7 +119,7 @@ textarea {
     &__detail-line {
       height: 1px;
       width: 50%;
-      background-color: ${({ theme }) => theme.colors.white};
+      background-color: ${({ theme }) => theme.colors.contentColor};
 
       &-right{
         width: 100%;

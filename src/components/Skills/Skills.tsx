@@ -6,13 +6,22 @@ import {
   testingTecnologies,
   agileMetodologies,
 } from "../../textContent/frameWorks";
+import { useAppSelector } from "../../store/hooks";
 
 const Skills = () => {
   const [t] = useTranslation("global");
+  const isLightThemeActive = useAppSelector(
+    (state) => state.uiState.isThemeLight
+  );
 
   return (
     <>
-      <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
+      <img
+        src={isLightThemeActive ? "./lightHexagon2.svg" : "./hexagon2.svg"}
+        alt="bg-hexagon"
+        width="100%"
+        height="auto"
+      />
       <SkillsStyled id="skills">
         <div className="section__title-wrapper section__title-wrapper-right">
           <div className="section__detail-line section__detail-line-right" />

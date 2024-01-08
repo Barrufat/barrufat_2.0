@@ -25,13 +25,13 @@ const ProjectStyled = styled.article`
       justify-content: center;
       overflow-y: hidden;
       height: 18vh;
-      background-color: #ffffff1c;
+      background-color: #8585855c;
       padding-top: 20px;
       border-radius: 10px 10px 0 0;
     }
 
     &__icon {
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.contentColor};
       text-decoration: none;
       font-size: larger;
       margin-left: 0.5rem;
@@ -86,11 +86,11 @@ const ProjectStyled = styled.article`
       flex-direction: column;
       align-items: center;
       width: 100%;
-      background-color: ${({ theme }) => theme.colors.lightBackground};
+      background-color: ${({ theme }) => theme.colors.background};
     }
 
     &__close {
-      color: ${({ theme }) => theme.colors.darkBackground};
+      color: ${({ theme }) => theme.colors.background};
       width: 100%;
       text-align: end;
     }
@@ -106,7 +106,7 @@ const ProjectStyled = styled.article`
       margin-left: 0.5rem;
 
       :hover {
-        color: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.contentColor};
       }
     }
   }

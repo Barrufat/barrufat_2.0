@@ -3,11 +3,14 @@ import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import ContactFormStyled from "./ContactFormStyled";
 import Reveal from "../Reveal/Reveal";
+import { useAppSelector } from "../../store/hooks";
 
 export const ContactForm = () => {
   const form = useRef();
-
   const [t] = useTranslation("global");
+  const isLightThemeActive = useAppSelector(
+    (state) => state.uiState.isThemeLight
+  );
 
   const sendEmail = (event: { preventDefault: () => void }) => {
     event.preventDefault();
@@ -31,7 +34,12 @@ export const ContactForm = () => {
 
   return (
     <>
-      <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
+      <img
+        src={isLightThemeActive ? "./lightHexagon2.svg" : "./hexagon2.svg"}
+        alt="bg-hexagon"
+        width="100%"
+        height="auto"
+      />
       <ContactFormStyled id="contact">
         <div className="section__title-wrapper section__title-wrapper-right">
           <div className="section__detail-line section__detail-line-right" />
