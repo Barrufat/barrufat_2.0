@@ -12,8 +12,9 @@ const HeaderStyled = styled.header`
   align-items: center;
   background: #2f372840;
 
-  .language-switch {
+  .switch {
     width: 50px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: flex-start;
     border-radius: 30px;
@@ -30,18 +31,18 @@ const HeaderStyled = styled.header`
       justify-content: flex-end;
       cursor: pointer;
       border-radius: 30px;
-      background-color: ${({ theme }) => theme.colors.white};
+      background-color: #fff;
       font-family: ${({ theme }) => theme.typography.mainFontFamily};
       padding: 3px 5px;
       border: solid 1.5px ${({ theme }) => theme.colors.primaryOrange};
-      color: ${({ theme }) => theme.colors.black};
+      color: #000;
       font-size: small;
     }
   }
 
   .header {
     &__icon {
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.contentColor};
       text-decoration: none;
       font-size: larger;
 

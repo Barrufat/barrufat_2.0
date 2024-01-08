@@ -23,7 +23,8 @@ const NavigationStyled = styled.nav`
   }
 
   .active {
-    background: ${({ theme }) => theme.colors.darkBackground};
+    background: ${({ theme }) => theme.colors.background};
+    font-weight: bold;
   }
 `;
 

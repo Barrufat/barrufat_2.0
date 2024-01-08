@@ -3,8 +3,8 @@ import styled from "styled-components";
 const PdfViewerStyled = styled.section`
   margin-top: 70px;
   padding-bottom: 20vh;
-  background-color: ${({ theme }) => theme.colors.darkBackground};
-  height: 100%;
+  background-color: ${({ theme }) => theme.colors.background};
+  height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;

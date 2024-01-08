@@ -3,13 +3,22 @@ import Project from "../Project/Project";
 import Reveal from "../Reveal/Reveal";
 import { useTranslation } from "react-i18next";
 import ProjectsListStyled from "./ProjectListStyled";
+import { useAppSelector } from "../../store/hooks";
 
 const ProjectsList = () => {
   const [t, i18n] = useTranslation("global");
+  const isLightThemeActive = useAppSelector(
+    (state) => state.uiState.isThemeLight
+  );
 
   return (
     <>
-      <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
+      <img
+        src={isLightThemeActive ? "./lightHexagon2.svg" : "./hexagon2.svg"}
+        alt="bg-hexagon"
+        width="100%"
+        height="auto"
+      />
       <ProjectsListStyled id="projects">
         <div className="section__title-wrapper">
           <div className="section__title-detail-wrapper">

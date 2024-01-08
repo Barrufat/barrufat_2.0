@@ -42,7 +42,7 @@ const ContactFormStyled = styled.section`
       width: 100%;
       padding: 5px;
       border-radius: 40px;
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.colors.contentColor};
       background-color: ${({ theme }) => theme.colors.primaryOrange};
       font-family: ${({ theme }) => theme.typography.mainFontFamily};
       font-size: ${({ theme }) => theme.typography.secondSize};

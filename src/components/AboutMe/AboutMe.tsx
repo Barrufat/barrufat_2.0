@@ -3,10 +3,14 @@ import Reveal from "../Reveal/Reveal";
 import AboutMeStyled from "./AboutMeStyled";
 import { useDispatch } from "react-redux";
 import { switchCVPdfActionCreator } from "../../store/feature/ui/uiSlice";
+import { useAppSelector } from "../../store/hooks";
 
 const AboutMe = () => {
   const dispatch = useDispatch();
   const [t] = useTranslation("global");
+  const isLightThemeActive = useAppSelector(
+    (state) => state.uiState.isThemeLight
+  );
 
   const openResumePdf = () => {
     dispatch(switchCVPdfActionCreator());
@@ -14,7 +18,12 @@ const AboutMe = () => {
 
   return (
     <>
-      <img src="./hexagon2.svg" alt="bg-hexagon" width="100%" height="auto" />
+      <img
+        src={isLightThemeActive ? "./lightHexagon2.svg" : "./hexagon2.svg"}
+        alt="bg-hexagon"
+        width="100%"
+        height="auto"
+      />
       <AboutMeStyled id="about">
         <div className="section__title-wrapper">
           <div className="section__title-detail-wrapper">

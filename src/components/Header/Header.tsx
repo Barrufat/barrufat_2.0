@@ -5,12 +5,20 @@ import HeaderStyled from "./HeaderStyled";
 import Navigation from "../Navigation/Navigation";
 import Reveal from "../Reveal/Reveal";
 import useOutsideClick from "../../hooks/useOutsideClick";
+import { useAppSelector } from "../../store/hooks";
+import { useDispatch } from "react-redux";
+import { switchColorThemeActionCreator } from "../../store/feature/ui/uiSlice";
 
 const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [__t, i18n] = useTranslation("global");
   const [currentLanguage, setCurrentLanguage] = useState(false);
   const [isNavigationActive, setIsNavigationActive] = useState(false);
+  const isLightThemeActive = useAppSelector(
+    (state) => state.uiState.isThemeLight
+  );
+
+  const dispatch = useDispatch();
 
   const switchNavigation = (isActive: boolean) => {
     setIsNavigationActive(isActive);
@@ -26,6 +34,10 @@ const Header = () => {
     setCurrentLanguage(!currentLanguage);
 
     currentLanguage ? i18n.changeLanguage("en") : i18n.changeLanguage("es");
+  };
+
+  const switchTheme = () => {
+    dispatch(switchColorThemeActionCreator());
   };
 
   return (
@@ -91,16 +103,22 @@ const Header = () => {
           </a>
         </Reveal>
         <Reveal movement={"above"} hasColorWrapper={false} transitionDelay={1}>
-          <div
-            className={`language-switch ${
-              currentLanguage ? "language-switch__active" : ""
-            }`}
-          >
-            <button
-              className="language-switch__button"
-              onClick={switchLanguage}
-            >
+          <div className={`switch ${currentLanguage ? "switch__active" : ""}`}>
+            <button className="switch__button" onClick={switchLanguage}>
               {currentLanguage ? "ES" : "EN"}
+            </button>
+          </div>
+        </Reveal>
+        <Reveal
+          movement={"above"}
+          hasColorWrapper={false}
+          transitionDelay={1.2}
+        >
+          <div
+            className={`switch ${isLightThemeActive ? "switch__active" : ""}`}
+          >
+            <button className="switch__button" onClick={switchTheme}>
+              {isLightThemeActive ? "☀️" : "🌙"}
             </button>
           </div>
         </Reveal>
